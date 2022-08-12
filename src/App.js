@@ -1,9 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Header1 from './components/Header1'
+import ReactLogo from './components/ReactLogo'
+import Courses from './components/Courses'
 
 function App() {
   return (
     <div className="App">
+      <Header1 />
+      <Courses />
+      <ReactLogo />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
