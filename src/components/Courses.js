@@ -16,7 +16,9 @@ export default function Courses() {
 
     return (
         <div className="container">
-            <h1>Learning Log</h1>
+            <div className="h1Box">
+                <h1>Learning Log</h1>
+            </div>
             
             {elementsArray}
         </div>

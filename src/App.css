@@ -59,30 +59,44 @@
 
 .projElContainer {
   background-color:#caeaf3;
+  background-image: linear-gradient(to bottom right, #caeaf3, #88e5ff);
   width: 100%;
   border-radius: 8px;
  
   display: flex;
   flex-direction: row;
-  justify-content: start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: fcenter;
   padding: 15px;
   margin:10px;
 }
 
 .infoBox {
   margin: 10px;
-  width:50%;
-  
+  width:50%;  
 }
 
 .hmargin {
   padding:0;
   margin: 2px;
+  color: #555
+}
+
+.h2margin {
+  padding:0;
+  margin: 8px;
+  color: #333;
+  text-shadow: 2px 1px white;
 }
 
 .projImg {
   height: 60px;
   width:max-content;
   padding:0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px grey;
+}
+
+.projImgBox {
+  margin: 8px;
 }
