@@ -1,0 +1,41 @@
+.box {
+    width:100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px grey;
+    display: flex;
+    margin: 0 4px;
+}
+
+.box_one {
+    width: 100%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #ddd; */
+    justify-content: center;
+    align-items: center;
+}
+
+.box_two {
+    width: 100%;
+    margin: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #ddd; */
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h4, h6 {
+    margin: 0;
+    padding: 1px;
+    color: #555;
+    text-align: center;
+}
+
+.image {
+    width: 80px;
+    height: 80px;
+    
+}

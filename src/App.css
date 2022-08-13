@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 350px auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  gap: 0px;
+  align-items: start;
 }
 
 .App-logo {
@@ -35,4 +41,48 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header{
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.coursesColumn{
+  grid-column: 1;
+}
+
+.projectsColumn{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.projElContainer {
+  background-color:#caeaf3;
+  width: 100%;
+  border-radius: 8px;
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 15px;
+  margin:10px;
+}
+
+.infoBox {
+  margin: 10px;
+  width:50%;
+  
+}
+
+.hmargin {
+  padding:0;
+  margin: 2px;
+}
+
+.projImg {
+  height: 60px;
+  width:max-content;
+  padding:0;
 }

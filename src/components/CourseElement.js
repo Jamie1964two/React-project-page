@@ -1,8 +1,7 @@
 import React from 'react';
 
 export default function CourseElement(props) {
-    console.log("here")
-    console.log(props)
+
     return (
 /*         <div className="elementBox">
             <img alt="coding language logo" src={process.env.PUBLIC_URL+"languageLogos/"+props.courseData[0].Logo} />
