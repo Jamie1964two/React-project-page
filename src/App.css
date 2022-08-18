@@ -1,4 +1,5 @@
 .App {
+  position: relative;
   text-align: center;
   display: grid;
   grid-template-columns: 350px auto;
@@ -7,6 +8,8 @@
   gap: 0px;
   align-items: start;
 }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -20,7 +23,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -99,4 +102,12 @@
 
 .projImgBox {
   margin: 8px;
+}
+
+.App-header {
+  background-color: "white";
+ 
+  @media (max-width: 1920px) {
+    background-color: "red";
+  }
 }

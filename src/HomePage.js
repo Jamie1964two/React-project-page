@@ -5,8 +5,9 @@ import ReactLogo from "./components/ReactLogo";
 import Courses from "./components/Courses";
 import WeatherApp from "./components/Weather-App/App";
 import ProjectElementWeather from "./components/ProjectElementWeather";
+import { Link } from "react-router-dom";
 
-function App() {
+function HomePage() {
   return (
     <div className="App">
       
@@ -24,22 +25,10 @@ function App() {
 
       <ReactLogo />
 
-      {/*       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+      <Link to="/Farkle">Farkle</Link>
+
     </div>
   );
 }
 
-export default App;
+export default HomePage;
