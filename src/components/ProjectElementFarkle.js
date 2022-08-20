@@ -17,7 +17,8 @@ export default function ProjectElementFarkle() {
                 </div>
             </div>
 
-            <div>
+          
+            <div className="infoBox">
             <div className="projEldiceBox">
                 <Dice noOfRolls={0} diceSetting={{fixed: false, keep: false, value: 1}} keepDiceToggle={()=>{}} frontPage={true} />
                 <Dice noOfRolls={0} diceSetting={{fixed: false, keep: false, value: 3}} keepDiceToggle={()=>{}} frontPage={true} />
@@ -26,6 +27,7 @@ export default function ProjectElementFarkle() {
             </div>
             <Link to="/Farkle"><button className="dicePlayButton">Play</button></Link>
             </div>
+    
         </div>
     )
 }

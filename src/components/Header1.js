@@ -6,7 +6,7 @@ function Header1() {
     return (
         <header style={styles.header} >
         <h1 style={styles.title} className="header-title">Jamie Moreland</h1>
-        <h2 style={styles.subline} className="header-subline">Front-End Developer Projects</h2>
+        <h2 style={styles.subline} className="header-subline">- Portfolio Projects -</h2>
         </header>
     )
 }
@@ -31,7 +31,6 @@ const styles = {
         "font-size" : "2em",
         "margin-top":"-1.5em",
         "font-family": "'Bubblegum Sans', cursive",
-        "color": "transparent",
         "z-index": "-1" 
     },
 

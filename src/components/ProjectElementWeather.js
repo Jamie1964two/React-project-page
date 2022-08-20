@@ -15,8 +15,10 @@ export default function ProjectElementWeather() {
                     <img className="projImg" alt="coding language logo" src={process.env.PUBLIC_URL+"languageLogos/"+"api.png"} />
                 </div>
             </div>
-            <WeatherApp />
 
+            <div className="infoBox">
+            <WeatherApp />
+            </div>
         </div>
     )
 }

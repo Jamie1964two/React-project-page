@@ -4,6 +4,8 @@ import ReactLogo from "./components/ReactLogo";
 import Courses from "./components/Courses";
 import ProjectElementWeather from "./components/ProjectElementWeather";
 import ProjectElementFarkle from "./components/ProjectElementFarkle";
+import ProjectElementWordsOfLife from "./components/ProjectElementWordsOfLife"
+import ContactInfo from "./components/ContactInfo";
 
 
 function HomePage() {
@@ -12,6 +14,10 @@ function HomePage() {
 
       <div style={{"position":"absolute","z-index":"-1"}}> 
       <ReactLogo />
+      </div>
+
+      <div className="contactInfoBox">
+        <ContactInfo />
       </div>
       
       <div className="header">
@@ -26,6 +32,8 @@ function HomePage() {
         <ProjectElementWeather />
 
         <ProjectElementFarkle />
+
+        <ProjectElementWordsOfLife />
       </div>
 
     </div>

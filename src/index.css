@@ -33,101 +33,103 @@ animation-fill-mode: forwards;
   animation-duration: 2s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
-  }
+  color:transparent;
+ 
+}
   
-  @keyframes descend {
-   0% {color: rgba(255, 255, 255, 0); position:relative; top:-2em;}
-   /*50% {color: rgba(1, 1, 1, 0.1); position:relative}*/
-    100% {color: rgba(255, 255, 255, 0.66); position:relative; top:0em;}
-  }
+@keyframes descend {
+  0% {color: rgba(255, 255, 255, 0); position:relative; top:-2em;}
+  /*50% {color: rgba(1, 1, 1, 0.1); position:relative}*/
+  100% {color: rgba(255, 255, 255, 0.66); position:relative; top:0em; text-shadow: 1px 1px 1px #888;  color: white; }
+}
 
-  .logo-ringOne {
-    animation-name: ringOne-appear;
-    animation-duration: 0.8s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-    }
+.logo-ringOne {
+  animation-name: ringOne-appear;
+  animation-duration: 0.8s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
     
-  @keyframes ringOne-appear {
-    0% {width:0vh; border: 0 solid transparent}
-    100% {border: 3.5vh solid #61dcfb6f}
-  }
+@keyframes ringOne-appear {
+0% {width:0vh; border: 0 solid transparent}
+100% {border: 3.5vh solid #61dcfb6f}
+}
 
-  .logo-ringTwo {
-    animation-name: ringTwo-appear;
-    animation-duration: 0.8s;
-    animation-delay: 3.6s;
-    animation-fill-mode: forwards;
-    }
-    
-  @keyframes ringTwo-appear {
-    0% {width:0vh; border: 0 solid transparent}
-    100% {border: 3.5vh solid #61dcfb6f}
-  }
+.logo-ringTwo {
+animation-name: ringTwo-appear;
+animation-duration: 0.8s;
+animation-delay: 3.6s;
+animation-fill-mode: forwards;
+}
 
-  .logo-ringThree {
-    animation-name: ringThree-appear;
-    animation-duration: 0.8s;
-    animation-delay: 4.4s;
-    animation-fill-mode: forwards;
-    }
-    
-  @keyframes ringThree-appear {
-    0% {width:0vh; border: 0 solid transparent}
-    100% {border: 3.5vh solid #61dcfb6f}
-  }
+@keyframes ringTwo-appear {
+0% {width:0vh; border: 0 solid transparent}
+100% {border: 3.5vh solid #61dcfb6f}
+}
 
-  .logo-circle {
-    animation-name: circle-appear;
-    animation-duration: 5.5s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    }
-    
-  @keyframes circle-appear {
-    0% {background-color: transparent}
-    100% {background-color: #61dcfb6f}
-  }
+.logo-ringThree {
+animation-name: ringThree-appear;
+animation-duration: 0.8s;
+animation-delay: 4.4s;
+animation-fill-mode: forwards;
+}
 
-  .logo-rotate {
-    animation: logo-rotate infinite 90s linear;
-    }
-    
-  @keyframes logo-rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+@keyframes ringThree-appear {
+0% {width:0vh; border: 0 solid transparent}
+100% {border: 3.5vh solid #61dcfb6f}
+}
 
-  .learning-log-ascend {
-    position: relative;
-    animation-name: learning-log-ascend;
-    animation-duration: 3s;
-    animation-delay: -0.1s;
-    animation-fill-mode: forwards;
-    }
-    
-    @keyframes learning-log-ascend {
-      from {top: 500px;
-      opacity: 0;}
-      to {top: 0px;
-        opacity: 1;}
-    }
+.logo-circle {
+animation-name: circle-appear;
+animation-duration: 5.5s;
+animation-delay: 1s;
+animation-fill-mode: forwards;
+}
 
-    .project-entrance {
-      position: relative;
-      animation-name: project-entrance;
-      animation-duration: 3s;
-      animation-delay: -0.1s;
-      animation-fill-mode: forwards;
-      }
-      
-      @keyframes project-entrance {
-        from {left: 100vw;
-        opacity: 0;}
-        to {left: 0vw;
-          opacity: 1;}
-      }
+@keyframes circle-appear {
+0% {background-color: transparent}
+100% {background-color: #61dcfb6f}
+}
+
+.logo-rotate {
+animation: logo-rotate infinite 90s linear;
+}
+
+@keyframes logo-rotate {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
+
+.learning-log-ascend {
+position: relative;
+animation-name: learning-log-ascend;
+animation-duration: 3s;
+animation-delay: -0.1s;
+animation-fill-mode: forwards;
+}
+
+@keyframes learning-log-ascend {
+  from {top: 500px;
+  opacity: 0;}
+  to {top: 0px;
+    opacity: 1;}
+}
+
+.project-entrance {
+  position: relative;
+  animation-name: project-entrance;
+  animation-duration: 3s;
+  animation-delay: -0.1s;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes project-entrance {
+  from {left: 100vw;
+  opacity: 0;}
+  to {left: 0vw;
+    opacity: 1;}
+}
