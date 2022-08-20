@@ -58,7 +58,7 @@ export default function Dice(props) {
     return (
         <div>
         <StyleRoot>
-            <div className={`farkle_dice farkle_grid ${keep ? "farkle_diceShrink" : "farkle_diceGrow"} ${fixed ? "farkle_diceGrey" : ""}`} onClick={keepDiceToggle} style={ wobble ? styles.wobble : styles.noWobble}>
+            <div className={`farkle_dice farkle_grid ${props.frontPage ? "" : keep ? "farkle_diceShrink" : "farkle_diceGrow"} ${fixed ? "farkle_diceGrey" : ""} ${props.frontPage ? "frontPageDice" : ""}`} onClick={keepDiceToggle} style={ wobble ? styles.wobble : styles.noWobble}>
                 <div className={`farkle_dot ${dicePattern[roll][0] ? "" : 'farkle_bckgrnd'}`}></div>
                 <div className={`farkle_dot ${dicePattern[roll][1] ? "" : 'farkle_bckgrnd'}`}></div>
                 <div className={`farkle_dot ${dicePattern[roll][2] ? "" : 'farkle_bckgrnd'}`}></div>

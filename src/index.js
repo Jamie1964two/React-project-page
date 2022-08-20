@@ -19,7 +19,7 @@ root.render(
         {/* This route is for home component 
           with exact path "/", in component props 
           we passes the imported component*/}
-        <Route path="/welcome" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
 
         <Route path="/Farkle" element={<Farkle />} />
       </Routes>

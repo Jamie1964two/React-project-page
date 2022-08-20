@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
+  background-color: #e2e8f3;
   box-sizing: border-box;
 }
 
@@ -50,7 +50,7 @@ animation-fill-mode: forwards;
     
   @keyframes ringOne-appear {
     0% {width:0vh; border: 0 solid transparent}
-    100% {border: 3.5vh solid #61dbfb09}
+    100% {border: 3.5vh solid #61dcfb6f}
   }
 
   .logo-ringTwo {
@@ -62,7 +62,7 @@ animation-fill-mode: forwards;
     
   @keyframes ringTwo-appear {
     0% {width:0vh; border: 0 solid transparent}
-    100% {border: 3.5vh solid #61dbfb09}
+    100% {border: 3.5vh solid #61dcfb6f}
   }
 
   .logo-ringThree {
@@ -74,7 +74,7 @@ animation-fill-mode: forwards;
     
   @keyframes ringThree-appear {
     0% {width:0vh; border: 0 solid transparent}
-    100% {border: 3.5vh solid #61dcfb09}
+    100% {border: 3.5vh solid #61dcfb6f}
   }
 
   .logo-circle {
@@ -86,7 +86,7 @@ animation-fill-mode: forwards;
     
   @keyframes circle-appear {
     0% {background-color: transparent}
-    100% {background-color: #61dcfb09}
+    100% {background-color: #61dcfb6f}
   }
 
   .logo-rotate {
@@ -102,3 +102,32 @@ animation-fill-mode: forwards;
     }
   }
 
+  .learning-log-ascend {
+    position: relative;
+    animation-name: learning-log-ascend;
+    animation-duration: 3s;
+    animation-delay: -0.1s;
+    animation-fill-mode: forwards;
+    }
+    
+    @keyframes learning-log-ascend {
+      from {top: 500px;
+      opacity: 0;}
+      to {top: 0px;
+        opacity: 1;}
+    }
+
+    .project-entrance {
+      position: relative;
+      animation-name: project-entrance;
+      animation-duration: 3s;
+      animation-delay: -0.1s;
+      animation-fill-mode: forwards;
+      }
+      
+      @keyframes project-entrance {
+        from {left: 100vw;
+        opacity: 0;}
+        to {left: 0vw;
+          opacity: 1;}
+      }

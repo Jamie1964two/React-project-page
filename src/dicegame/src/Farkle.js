@@ -3,8 +3,12 @@ import './farkle_styles.css'
 import DiceBoard from './components/DiceBoard';
 import Score from './components/Score';
 import calcScore from './calculate_score';
+//import useWindowSize from 'react-use/lib/useWindowSize'
+import Confetti from 'react-confetti'
 
 function Farkle() {
+
+  //const { width, height } = useWindowSize()
 
   function diceInitialise() {
     const array = [];
@@ -43,6 +47,10 @@ function Farkle() {
     setTotal( prev => [...prev, keepResult.score])
     setNoOfRolls(prev=>prev+1);
 
+  }
+
+  function celebrate() {
+    if(newHighScore) setFireConfetti(true);
   }
 
   function checkScoringDice() {
@@ -99,6 +107,7 @@ function Farkle() {
     setKeepResult({ "score": 0, "scoreString": ""});
     setTotal([])
     setNewHighScore(false);
+    setFireConfetti(false)
   }
 
   const [diceArray, setDiceArray] = useState(()=>diceInitialise());
@@ -107,7 +116,8 @@ function Farkle() {
   const [keepResult, setKeepResult] = useState({ "score": 0, "scoreString": ""});
   const [total, setTotal] = useState([])
   const [highScore, setHighScore] = useState(0);
-  const [newHighScore, setNewHighScore] = useState(false)
+  const [newHighScore, setNewHighScore] = useState(false);
+  const [fireConfetti, setFireConfetti] = useState(false);
   
   useEffect( () => {
     const fullArray = diceArray.filter(x => !x.fixed).map( x => x.value );
@@ -135,6 +145,10 @@ function Farkle() {
 
   return (
     <div className={`farkle_App`}>
+        { fireConfetti && <Confetti
+      width={"3000px"}
+      height={"3000px"}
+    /> }
       <div className="farkle_highScore">
         <h2>{`High Score: ${highScore}`}</h2>
       </div>
@@ -173,7 +187,16 @@ function Farkle() {
         total={total}
         playAgain={playAgain}
         newHighScore={newHighScore}
+        celebrate={celebrate}
       />
+      </div>
+
+      <div style={{"width": "80%", "margin-top":"40px"}}>
+        <h4 style={{"color":"#999"}}>This game is a single player version of the popular game Farkle.</h4>
+        <h4 style={{"color":"#999"}}>You must roll at least one scoring dice each turn or it's game over!</h4>
+        <h4 style={{"color":"#999"}}>To score, roll a one (100 points), five (50 points) or three of a kind.</h4>
+        <h4 style={{"color":"#999"}}>Each turn decide which dice to keep and then roll the rest again.</h4>
+        
       </div>
       
     </div>

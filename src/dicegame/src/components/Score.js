@@ -19,6 +19,8 @@ export default function Score(props) {
 
     if(props.fullResult.score === 0){
 
+        props.celebrate()
+
         return(
             <div className="farkle_flexCenter">
                 <h2 className="farkle_farkled">You're FARKLED!</h2>
