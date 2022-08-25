@@ -12,7 +12,7 @@ export default function ProjectElementWeather() {
                 <h4 className="hmargin">Inspirational Bible based App available for download on the GooglePlay Store</h4>
                 <h6 className="hmargin">Built with React-Native using the Expo platform</h6>
                 <div className="projImgBox">
-                    <img className="projImg reactNativeImg" alt="react-native logo" src={process.env.PUBLIC_URL+"languageLogos/"+"React-Native.png"} />
+                    <img className="projImg reactNativeImg" alt="react-native logo" src={process.env.PUBLIC_URL+"languageLogos/"+"react-native.png"} />
                     <img className="projImg expoImg" alt="expo logo" src={process.env.PUBLIC_URL+"languageLogos/"+"Expo.png"} />
                 </div>
             </div>

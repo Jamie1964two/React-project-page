@@ -72,4 +72,11 @@ export const courseData = [
         Link: "https://scrimba.com/learn/learnreact",
         Logo: "React.png"
     },
+    {
+        Course : "TypeScript",
+        Date : "Aug 2022",
+        Provider: "Scrimba",
+        Link: "https://scrimba.com/learn/typescript",
+        Logo: "typescript.png"
+    }
 ]

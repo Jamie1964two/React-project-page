@@ -1,11 +1,13 @@
 .container {
     /* width: 300px; */
-    background-color: rgba(256,256,256,0.9);
+    background-color: rgba(256,256,256,0.5);
     padding: 20px 10px;
     margin: 10px;
     border-radius: 5px;
     z-index: 10;
     max-width: 280px;
+    /* filter: blur(1px)  */
+    backdrop-filter: blur(10px);
 }
 h1 {
     margin: 0;
@@ -26,7 +28,14 @@ h1 {
     background-color: white;
     margin: 5px;
     border-radius: 5px;
+    
 }
+
+.elementBox:before {
+    filter: blur(100px);
+}
+
+
 
 img {
     height: 50px;

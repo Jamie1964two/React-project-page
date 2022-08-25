@@ -133,3 +133,37 @@ animation-fill-mode: forwards;
   to {left: 0vw;
     opacity: 1;}
 }
+
+.expressLinks {
+  display: inline-block;
+}
+
+.expressLargeImg {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  margin-bottom:10px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px #ddd;
+}
+
+.footer {
+  background-color: white;
+  height: 80px;
+  width: 100vw;
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  margin-top: 20px;
+  padding: 40px;
+}
+
+.emailLink, .emailIcon {
+  color: #666;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.emailLink:hover, .emailIcon:hover {
+  color: rgb(16, 161, 209);
+  font-size: 20px;
+}

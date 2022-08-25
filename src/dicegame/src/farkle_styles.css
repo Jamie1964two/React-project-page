@@ -39,18 +39,24 @@ code {
   justify-content: space-around;
   align-content: space-around;
   padding: 8px;
+  position: relative;
 }
 
 .farkle_dot{
   /* grid-column: 1; */
   /* grid-row:1; */
-  position: relative;
+  
   width: 4vw;
   height: 4vw;
   max-width: 20px;
   max-height:20px;
   background-color: white;
   border-radius: 50%; 
+}
+
+.dotSize-small{
+  width: 1.5vw;
+  height: 1.5vw;
 }
 
 @media (prefers-reduced-motion: no-preference) {

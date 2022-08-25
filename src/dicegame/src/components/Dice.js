@@ -59,15 +59,15 @@ export default function Dice(props) {
         <div>
         <StyleRoot>
             <div className={`farkle_dice farkle_grid ${props.frontPage ? "" : keep ? "farkle_diceShrink" : "farkle_diceGrow"} ${fixed ? "farkle_diceGrey" : ""} ${props.frontPage ? "frontPageDice" : ""}`} onClick={keepDiceToggle} style={ wobble ? styles.wobble : styles.noWobble}>
-                <div className={`farkle_dot ${dicePattern[roll][0] ? "" : 'farkle_bckgrnd'}`}></div>
-                <div className={`farkle_dot ${dicePattern[roll][1] ? "" : 'farkle_bckgrnd'}`}></div>
-                <div className={`farkle_dot ${dicePattern[roll][2] ? "" : 'farkle_bckgrnd'}`}></div>
-                <div className={`farkle_dot ${dicePattern[roll][3] ? "" : 'farkle_bckgrnd'}`}></div>
-                <div className={`farkle_dot ${dicePattern[roll][4] ? "" : 'farkle_bckgrnd'}`}></div>
-                <div className={`farkle_dot ${dicePattern[roll][5] ? "" : 'farkle_bckgrnd'}`}></div>
-                <div className={`farkle_dot ${dicePattern[roll][6] ? "" : 'farkle_bckgrnd'}`}></div>
-                <div className={`farkle_dot ${dicePattern[roll][7] ? "" : 'farkle_bckgrnd'}`}></div>
-                <div className={`farkle_dot ${dicePattern[roll][8] ? "" : 'farkle_bckgrnd'}`}></div>
+                <div className={`farkle_dot ${dicePattern[roll][0] ? "" : 'farkle_bckgrnd'} ${props.frontPage ? "dotSize-small" : ""}`}></div>
+                <div className={`farkle_dot ${dicePattern[roll][1] ? "" : 'farkle_bckgrnd'} ${props.frontPage ? "dotSize-small" : ""}`}></div>
+                <div className={`farkle_dot ${dicePattern[roll][2] ? "" : 'farkle_bckgrnd'} ${props.frontPage ? "dotSize-small" : ""}`}></div>
+                <div className={`farkle_dot ${dicePattern[roll][3] ? "" : 'farkle_bckgrnd'} ${props.frontPage ? "dotSize-small" : ""}`}></div>
+                <div className={`farkle_dot ${dicePattern[roll][4] ? "" : 'farkle_bckgrnd'} ${props.frontPage ? "dotSize-small" : ""}`}></div>
+                <div className={`farkle_dot ${dicePattern[roll][5] ? "" : 'farkle_bckgrnd'} ${props.frontPage ? "dotSize-small" : ""}`}></div>
+                <div className={`farkle_dot ${dicePattern[roll][6] ? "" : 'farkle_bckgrnd'} ${props.frontPage ? "dotSize-small" : ""}`}></div>
+                <div className={`farkle_dot ${dicePattern[roll][7] ? "" : 'farkle_bckgrnd'} ${props.frontPage ? "dotSize-small" : ""}`}></div>
+                <div className={`farkle_dot ${dicePattern[roll][8] ? "" : 'farkle_bckgrnd'} ${props.frontPage ? "dotSize-small" : ""}`}></div>
             </div>
         </StyleRoot>
         {/* <button onClick={rollDice}>Roll</button> */}
