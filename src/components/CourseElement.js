@@ -15,6 +15,7 @@ export default function CourseElement(props) {
             <div className="provider">
                 <h5>{props.courseData.Provider}</h5>
                 {props.courseData.Link && <a href={props.courseData.Link}>Course link</a> }
+                {props.courseData.Project && <a href={props.courseData.Project}>Project link</a> }
                 {props.courseData.Certificate && <a href={props.courseData.Certificate}>Certificate</a> }
             </div>
         </div>

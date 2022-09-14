@@ -21,7 +21,7 @@ export default function ProjectEasyBank() {
             <div className="infoBox">
                 <img className="easyBankImg" alt="webpage preview" src={process.env.PUBLIC_URL+"projectImages/"+"easybank.jpg"} />
 
-            <a className="" href="https://storage.cloud.google.com/easybank/Easybank%20landing%20page.mhtml">
+            <a className="" href="https://easybank-website-psi.vercel.app/">
                <div className="trasparentLink">
                 
                </div>

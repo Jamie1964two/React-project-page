@@ -20,7 +20,7 @@ export default function Courses() {
                 <h1>Learning Log</h1>
             </div>
             
-            {elementsArray}
+            {elementsArray.reverse()}
         </div>
     )
 }

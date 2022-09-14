@@ -123,7 +123,7 @@ animation-fill-mode: forwards;
   position: relative;
   animation-name: project-entrance;
   animation-duration: 3s;
-  animation-delay: -0.1s;
+  
   animation-fill-mode: forwards;
 }
   

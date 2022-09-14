@@ -27,7 +27,7 @@ export const courseData = [
         Course : "React-Native",
         Date : "Aug 2021",
         Provider: "Solo Project",
-        Link: "https://play.google.com/store/apps/details?id=com.jamie1964two.wordsoflife&hl=en&gl=US",
+        Project: "https://play.google.com/store/apps/details?id=com.jamie1964two.wordsoflife&hl=en&gl=US",
         Logo: "react-native.png"
     },
     {
@@ -78,5 +78,19 @@ export const courseData = [
         Provider: "Scrimba",
         Link: "https://scrimba.com/learn/typescript",
         Logo: "typescript.png"
+    },
+    {
+        Course : "HTML + Sass",
+        Date : "Sept 2022",
+        Provider: "FreeCodeCamp",
+        Link: "https://www.youtube.com/watch?v=aoQ6S1a32j8&t=6s",
+        Logo: "sass.jpg"
+    },
+    {
+        Course : "Next",
+        Date : "Sept 2022",
+        Provider: "Academind",
+        Link: "https://www.youtube.com/watch?v=MFuwkrseXVE&t=1248s",
+        Logo: "next.png"
     }
 ]

@@ -6,6 +6,7 @@ import ProjectElementWeather from "./components/ProjectElementWeather";
 import ProjectElementFarkle from "./components/ProjectElementFarkle";
 import ProjectElementWordsOfLife from "./components/ProjectElementWordsOfLife";
 import ProjectEasyBank from "./components/ProjectEasyBank";
+import ProjectReactMeetups from "./components/ProjectReactMeetups";
 import ContactInfo from "./components/ContactInfo";
 import ProjectElementExpress from './components/ProjectElementExpress'
 import React, {useState, useEffect} from 'react';
@@ -45,16 +46,19 @@ function HomePage() {
         <Courses />
       </div>
       
-      <div className={`projectsColumn project-entrance ${matches ? "coursesColumn-small" : ""}`}>
-        <ProjectEasyBank />
+      <div className={`projectsColumn ${matches ? "coursesColumn-small" : ""}`}>
+
+        <div className="project-entrance" style={{"animation-delay": "-0.1s"}}><ProjectReactMeetups /></div>
+
+        <div className="project-entrance" style={{"animation-delay": "0.1s"}}><ProjectEasyBank /></div>
         
-        <ProjectElementExpress />
+        <div className="project-entrance" style={{"animation-delay": "0.3s"}}><ProjectElementExpress /></div>
 
-        <ProjectElementWeather />
+        <div className="project-entrance" style={{"animation-delay": "0.5s"}}><ProjectElementWeather /></div>
 
-        <ProjectElementFarkle />
+        <div className="project-entrance" style={{"animation-delay": "0.7s"}}><ProjectElementFarkle /></div>
 
-        <ProjectElementWordsOfLife />
+        <div className="project-entrance" style={{"animation-delay": "0.9s"}}><ProjectElementWordsOfLife /></div>
 
       </div>
 
