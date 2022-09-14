@@ -4,7 +4,8 @@ import ReactLogo from "./components/ReactLogo";
 import Courses from "./components/Courses";
 import ProjectElementWeather from "./components/ProjectElementWeather";
 import ProjectElementFarkle from "./components/ProjectElementFarkle";
-import ProjectElementWordsOfLife from "./components/ProjectElementWordsOfLife"
+import ProjectElementWordsOfLife from "./components/ProjectElementWordsOfLife";
+import ProjectEasyBank from "./components/ProjectEasyBank";
 import ContactInfo from "./components/ContactInfo";
 import ProjectElementExpress from './components/ProjectElementExpress'
 import React, {useState, useEffect} from 'react';
@@ -45,6 +46,8 @@ function HomePage() {
       </div>
       
       <div className={`projectsColumn project-entrance ${matches ? "coursesColumn-small" : ""}`}>
+        <ProjectEasyBank />
+        
         <ProjectElementExpress />
 
         <ProjectElementWeather />
@@ -52,6 +55,7 @@ function HomePage() {
         <ProjectElementFarkle />
 
         <ProjectElementWordsOfLife />
+
       </div>
 
       <Footer />
